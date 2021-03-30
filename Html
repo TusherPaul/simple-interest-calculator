@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Simple Interest Calculator</title>
+  <link rel="stylesheet" type="text/css" href="view.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body ng-app="myapp" ng-controller='control'>
+
+<nav class="navbar" id='navbar'>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1>{{title}}</h1>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><p>Home</p></li>
+      <li><p>About</p></li>
+      <li><p>Contact Us</p></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron" id="content">
+     <form>
+       <div class="form-group">
+         <label>Principal Amount(in rupees)</label>
+         <input type="number" required class="form-control" style="width:250px;" ng-model="inputData.amount">
+       </div>
+       <div class="form-group">
+         <label>Rate of Interest(in %):</label>
+           <input type="number" required class="form-control" style="width:250px;" ng-model="inputData.rate">
+       </div>
+       <div class="form-group">
+         <label>Time(in months):</label>
+           <input type="number" required class="form-control" style="width:250px;" ng-model="inputData.time">
+       </div>
+       <div class="form-group">
+         <button type="submit" class="btn btn-success" ng-click="calculate()">Calculate</button>
+       </div>
+     </form>
+     <h2 id="result"></h2>
+</div>
+
+<footer id="foot">
+  <p>&copy; My Company Pvt. Ltd.</p>
+</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<script src="app.js"></script>
+</html>

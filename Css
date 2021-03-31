@@ -1,0 +1,35 @@
+#navbar {
+  background-color: #41bbc6;
+  padding: 10px 10px;
+  margin-bottom: 0px;
+}
+
+nav p {
+  font-size: 20px;
+  padding: 0px 20px;
+}
+#content {
+  margin-bottom: 0;
+  height: 80vh;
+}
+
+form {
+  margin-top: 50px;
+  margin-left: 20%;
+  font-size: 20px;
+  width: 400px;
+}
+
+#result {
+  color:brown;
+  position: relative;
+  top:50px;
+  text-align: center;
+}
+
+#foot {
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  height: 100px;
+}
